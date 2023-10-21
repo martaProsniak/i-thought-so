@@ -1,6 +1,7 @@
 import { auth, provider } from '../../../firebase'
 import { signInWithPopup } from 'firebase/auth'
-import googleIcon from '../../../assets/google-icon.png'
+import googleLogo from '../../../assets/google.svg'
+import { Button, Image, Box, Flex, Text } from '@chakra-ui/react'
 
 export const SignIn = () => {
 
@@ -10,5 +11,7 @@ export const SignIn = () => {
     }
 
 
-    return <div><button onClick={handleSignIn}><img src={googleIcon} alt='Google logo' style={{ width: '20px', height: '20px' }} />Sign in with Google</button></div>
+    return <Box><Button padding={2} onClick={handleSignIn}>
+        <Flex align={'center'}><Image src={googleLogo} mr={1} alt='Google logo' boxSize={'22px'} /><Text>Sign in with Google</Text></Flex>
+    </Button></Box>
 }
