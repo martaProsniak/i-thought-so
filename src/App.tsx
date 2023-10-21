@@ -2,6 +2,7 @@ import './App.css'
 import { useData } from './hooks/useData'
 import { Thought } from './utils/interfaces'
 import { SignIn } from './components/auth/google/SignIn';
+import { Heading } from '@chakra-ui/react'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <>
-      <h1>I thought so</h1>
+      <Heading m={6}>I thought so</Heading>
       <SignIn />
     </>
   )
