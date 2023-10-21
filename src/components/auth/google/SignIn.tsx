@@ -11,7 +11,7 @@ export const SignIn = () => {
     }
 
 
-    return <Box><Button padding={2} onClick={handleSignIn}>
-        <Flex align={'center'}><Image src={googleLogo} mr={1} alt='Google logo' boxSize={'22px'} /><Text>Sign in with Google</Text></Flex>
+    return <Box><Button padding={4} onClick={handleSignIn}>
+        <Flex align={'center'}><Image src={googleLogo} mr={2} alt='Google logo' boxSize={'22px'} /><Text lineHeight={'14px'}>Sign in with Google</Text></Flex>
     </Button></Box>
 }
