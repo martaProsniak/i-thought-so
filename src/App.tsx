@@ -1,6 +1,7 @@
 import './App.css'
 import { useData } from './hooks/useData'
 import { Thought } from './utils/interfaces'
+import { SignIn } from './components/auth/google/SignIn';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <h1>I thought so</h1>
+      <SignIn />
     </>
   )
 }
